@@ -245,17 +245,21 @@ def tree_generation(json_arr):
   level_order_traversal(tree_head)
 
 #messages table
-json_arr = [{
-  "TEMP": 25,
-  "HUM": 50
-}, {
-  "TEMP": 30,
-  "CO2": 40,
-  "HUM": 59
-},{
-  "H2O":54,
-  "CO2": 40
-}]
+json_arr = [
+  {
+    "TEMP": 25,
+    "HUM": 50
+  }, 
+  {
+    "TEMP": 30,
+    "CO2": 40,
+    "HUM": 59
+  }
+  ,{
+    "H2O":54,
+    "CO2": 40
+  }
+]
 
 #tree generation function
 tree_generation(json_arr)
